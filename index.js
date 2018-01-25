@@ -1,6 +1,6 @@
 "use strict"
 
-const exec = require('child_process').exec
+const OsCommands = require('./commands')
 
 let Service, Characteristic
 
@@ -14,6 +14,7 @@ function ComputerScreen(log, config, api) {
     this.log = log;
     this.currentStatus = true
     this.name = config["name"]
+    this.osType = config["osType"]
 
     this.screenService = new Service.Switch(this.name);
 
@@ -39,12 +40,22 @@ ComputerScreen.prototype.getSwitchOnCharacteristic = function(next) {
 
 ComputerScreen.prototype.setSwitchOnCharacteristic = function (on, next) {
         const me = this
-        me.log(`Set status to ${on}`)
+        let commands;
+        switch (this.osType) {
+            case 'windows':
+                commands = OsCommands.windows
+                break;
+            case 'mac':
+            default:
+                commands = OsCommands.mac
+                break;
+        }
+        me.log(`Set display to ${on ? 'on' : 'off'}`)
         me.currentStatus = !me.currentStatus
         if (!me.currentStatus) {
-            exec("pmset displaysleepnow")
+            commands.turnOff()
         } else {
-            exec("caffeinate -u -t 5")
+            commands.turnOn()
         }
         return next()
 }

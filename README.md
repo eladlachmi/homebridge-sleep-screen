@@ -1,6 +1,8 @@
 # homebridge-sleep-screen
 
+[![npm version](https://badge.fury.io/js/homebridge-standby-screen.svg)](https://badge.fury.io/js/homebridge-standby-screen)
 [![Known Vulnerabilities](https://snyk.io/test/github/elad-lachmi/homebridge-sleep-screen/badge.svg?targetFile=package.json)](https://snyk.io/test/github/elad-lachmi/homebridge-sleep-screen?targetFile=package.json)
+[![dependencies](https://david-dm.org/elad-lachmi/homebridge-sleep-screen.svg)]()
 
 ## OS Support
 
@@ -14,6 +16,19 @@ Both are suported on MacOS > 10.9
 ### Windows 10
 
 I will try and implement Windows 10 support next.
+
+## Configuration
+
+```json
+    {
+        "accessory": "ComputerScreen",
+        "name": "Mac Screen",
+        "osType": "mac"
+    }
+
+```
+
+`osType` can be mac, which uses pmset and caffinate or windows, which uses a `powershell` command run from `cmd`. Default is mac.
 
 ## Work in progress
 
