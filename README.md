@@ -18,6 +18,8 @@ I will try and implement Windows 10 support next.
 This is still at the very early stages.
 Use at your own risk.
 
+**Note: Currently this assumes you are running homebridge on the computer, which you want to control the screen of. I will try and make this more distributed later.**
+
 If you would like to contribute, feel free to send a PR my way.
 
 Enjoy!
