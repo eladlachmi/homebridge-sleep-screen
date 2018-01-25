@@ -2,10 +2,13 @@
   "name": "homebridge-standby-screen",
   "version": "0.0.1",
   "description": "A homebridge plugin for putting your monitors to sleep",
+  "repository": {
+    "url": "https://github.com/elad-lachmi/homebridge-sleep-screen"
+  },
   "main": "index.js",
   "preferGlobal": true,
   "scripts": {
-    "test": "npm test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
     "node": ">=4.4.1",
@@ -19,7 +22,11 @@
     "standby"
   ],
   "author": "Elad Lachmi",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elad-lachmi/homebridge-sleep-screen/issues"
+  },
+  "homepage": "https://github.com/elad-lachmi/homebridge-sleep-screen/",
   "dependencies": {
     "eslint": "^4.16.0"
   }
