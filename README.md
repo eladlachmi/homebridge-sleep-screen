@@ -1,5 +1,7 @@
 # homebridge-sleep-screen
 
+[![Known Vulnerabilities](https://snyk.io/test/github/elad-lachmi/homebridge-sleep-screen/badge.svg?targetFile=package.json)](https://snyk.io/test/github/elad-lachmi/homebridge-sleep-screen?targetFile=package.json)
+
 ## OS Support
 
 ### MacOS
