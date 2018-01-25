@@ -1,0 +1,26 @@
+{
+  "name": "homebridge-standby-screen",
+  "version": "0.0.1",
+  "description": "A homebridge plugin for putting your monitors to sleep",
+  "main": "index.js",
+  "preferGlobal": true,
+  "scripts": {
+    "test": "npm test"
+  },
+  "engines": {
+    "node": ">=4.4.1",
+    "homebridge": ">=0.2.0"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "windows",
+    "mac",
+    "screen",
+    "standby"
+  ],
+  "author": "Elad Lachmi",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^4.16.0"
+  }
+}
