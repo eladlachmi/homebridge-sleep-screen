@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/elad-lachmi/homebridge-sleep-screen/",
   "dependencies": {
-    "eslint": "^4.16.0"
+    "eslint": "^5.5.0"
   }
 }
